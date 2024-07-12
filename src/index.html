@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="bg-[#F2EAE2] w-dvw h-dvh flex items-center justify-center">
+      <!-- Main Card Container -->
+      <div
+        class="sm:w-[30rem] sm:flex sm:justify-start main-card bg-white m-10 w-72 rounded-lg"
+      >
+        <!-- Images without Container -->
+        <img
+          src="./images/image-product-mobile.jpg"
+          class="sm:hidden rounded-t-lg"
+          alt=""
+        />
+        <img
+          src="./images/image-product-desktop.jpg"
+          class="rounded-l-lg sm:basis-1 sm:block size-3/6 hidden"
+          alt=""
+        />
+
+        <!-- Text Container -->
+
+        <div
+          class="sm:justify-evenly sm:basis-full sm:basis-1 text-container p-4 flex flex-col gap-2"
+        >
+          <h2 class="tracking-widest font-thin">PERFUME</h2>
+          <h1 class="sm:pr-3 font-extrabold text-2xl font-serif">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="text-xs text-[#6C7289]">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price-container flex gap-2">
+            <h1 class="text-[#3D8168] font-bold text-2xl font-serif">
+              $149.99
+            </h1>
+            <p class="font-thin text-xs self-center"><s>$169.99</s></p>
+          </div>
+          <button
+            class="bg-[#3D8168] text-white flex items-center justify-center p-3 rounded-lg"
+          >
+            <img src="./images/icon-cart.svg" class="pr-3" alt="" />Add to cart
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
